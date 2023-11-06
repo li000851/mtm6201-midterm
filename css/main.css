@@ -1,7 +1,6 @@
 body, h1, img,h4, p, ul, li {
     margin: 0;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
+    
     background-color: #fcfcf5;
     color: #434333;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -18,6 +17,10 @@ header {
 .logo {
     width: 150px;
 }
+
+/* animation */
+
+
 
 nav ul {
     display: flex;
@@ -51,7 +54,7 @@ nav a {
     flex-direction: column;
     justify-content: flex-end;
     grid-row: span 2;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .vertical-text p{
@@ -70,7 +73,6 @@ nav a {
     margin: 2rem 0;
     text-decoration: none;
     color: #433933c9; 
-
 }
   
   .social-icons a:hover {
@@ -333,6 +335,8 @@ img.bread-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto); 
+
+    gap: 1rem;
 }
 .flex-bread{
     display: flex;
@@ -401,7 +405,7 @@ img.bread-img{
         display: block;
       }
     .bread-image{
-        order: 0;
+        margin-top: 2rem;
         text-align: center;
         align-items: center;
     }
@@ -446,5 +450,23 @@ img.bread-img{
     .vertical-text p{
         display: none;
     }
-}
+    .social-icons {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
 
+        margin: 2rem;
+        margin-right: 5.5rem;
+    }
+    .social-icons a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .social-icons a:hover,
+    .social-icons a:focus {
+        color:  #ffb300ce; /* 悬停时图标颜色变化 */
+    }
+    
+}
