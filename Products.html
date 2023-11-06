@@ -8,8 +8,14 @@
 </head>
 <body>
     <header>
-        <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
-        
+        <!-- responsive image -->
+        <picture>
+            <source srcset="images/Sweetscape-200_x_200.png" media="(max-width: 200px)">
+            <source srcset="images/Sweetscape-400_x_400.png" media="(max-width: 400px)">
+    
+            <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
+        </picture>
+       
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -24,7 +30,15 @@
     <main>
         <section  class="wrapper">
         <h1>Products</h1>
-        <img class="banner2" src="images/banner2.jpg" alt="banner2">
+        <!-- banner img -->
+        <picture>
+            <source srcset="images/banner-600_x_293.jpeg.png" media="(max-width: 600px)">
+            <source srcset="images/banner2.jpg" media="(max-width: 800px)">
+
+            <img class="banner2" src="images/banner2.jpg" alt="banner2">
+        </picture>
+       
+        <!-- skip link -->
         <a href="#maincontent" class="skip-link">Skip to main content</a>
         <div class="intro"> 
             <div class="h2">
@@ -37,7 +51,7 @@
             </div>     
         </div>
         </section>
-
+<!-- banner and button -->
         <div class="banner3">
             <h3>WHERE CAN YOU FIND OUR TASTY TRADITIONAL SOURDOUGH?</h3>
             <div class="buttons">
@@ -47,6 +61,7 @@
         </div> 
 
         <section  class="wrapper">
+            <!-- intro bread and img -->
         <div class="grid-bread" id="maincontent" tabindex="-1">
             <div class="flex-bread">
                 <img src="images/bread1.jpeg" alt="bread-img" class="bread-img">

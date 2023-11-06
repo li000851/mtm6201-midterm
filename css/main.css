@@ -20,8 +20,8 @@ header {
 
 /* animation */
 
-
-
+/* animation end */
+ 
 nav ul {
     display: flex;
     list-style-type: none;
@@ -466,7 +466,7 @@ img.bread-img{
     
     .social-icons a:hover,
     .social-icons a:focus {
-        color:  #ffb300ce; /* 悬停时图标颜色变化 */
+        color:  #ffb300ce; 
     }
     
 }

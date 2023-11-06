@@ -9,9 +9,16 @@
 </head>
 
 <body>
-
+    <!-- nav bar -->
     <header role="banner">
-        <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
+        <!-- responsive image -->
+        <picture>
+            <source srcset="images/Sweetscape-200_x_200.png" media="(max-width: 200px)">
+            <source srcset="images/Sweetscape-400_x_400.png" media="(max-width: 400px)">
+            <source srcset="images/Sweetscape.png" media="(max-width: 600px)">
+    
+            <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
+        </picture>
         
         <nav class="navbar" role="navigation">
             <ul class="nav-links">
@@ -28,7 +35,7 @@
         <div class="grid-container">
 
             <div class="vertical-text">
-                
+                <!--social icons  -->
                 <div class="social-icons">
                     <!-- Facebook -->
                     <a href="https://www.facebook.com" target="_blank">
@@ -48,23 +55,34 @@
             </div>
 
             <div class="bread-image">
-                <img src="images/Croissant2.png" alt="Wheat Flour Bread">
-            </div>
+                <!-- responsive image -->
+                <picture>
+                    <source srcset="images/Croissant2-400_x_357.png" media="(max-width: 400px)">
+                    <source srcset="images/Croissant2-600_x_535.png" media="(max-width: 600px)">
+                    <source srcset="images/Croissant2.png" media="(max-width: 900px)">
+
             
+                    <img src="images/Croissant2.png" alt="Wheat Flour Bread">
+                </picture>
+
+            </div>
+            <!-- title text -->
             <div class="bread-info">
                 <h1>Traditional Recipe</h1>
                 <p>It is a magical time of year at Sweetscape, where the sweet scent of buttery pastry and iconic festive spices mingle in the air.</p>
                 <p>We use only natural ingredients to achieve this pleasing taste.</p>
+             <!-- responsive image -->
+                <picture>
+                    <source srcset="images/crumb-200_x_118.png" media="(max-width: 400px)">
+                    <source srcset="images/crumb.png" media="(max-width: 600px)">
 
-                <img src="images/crumb.png" alt="Breadsticks" class="crumb">
+                    <img src="images/crumb.png" alt="Breadsticks" class="crumb">
+                </picture>
+                
                 <p>Every Crumb Was Made With Love</p>
             </div> 
 
-<!-- 
-            <div class="crumb">
-                <img src="images/crumb.png" alt="Breadsticks" class="crumb">
-                <p>Every Crumb Was Made With Love</p>
-            </div> -->
+
         </div>
     </main>
 

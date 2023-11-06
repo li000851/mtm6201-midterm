@@ -8,7 +8,13 @@
 </head>
 <body>
     <header>
-        <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
+        <!-- responsive image -->
+        <picture>
+            <source srcset="images/Sweetscape-200_x_200.png" media="(max-width: 200px)">
+            <source srcset="images/Sweetscape-400_x_400.png" media="(max-width: 400px)">
+    
+            <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
+        </picture>
         
         <nav class="navbar">
             <ul class="nav-links">
@@ -24,10 +30,23 @@
     <main class="wrapper">
         <h1>About Us</h1>
         <p>Head west out of Melbourne towards the Great Ocean Road, and just outside of Colac you’ll pass through a region where the Otway foothills meet the volcanic lake and plain country known as SweetEscape.</p>
-
+<!-- intro img -->
         <div class="map-grid">
-            <img src="images/map.jpeg" alt="map">
-            <img src="images/map2.jpeg" alt="map2">
+            <picture>
+                <source srcset="images/map-600_x_890.jpeg" media="(max-width: 400px)">
+                <source srcset="images/map.jpeg" media="(max-width: 600px)">
+                
+                <img src="images/map.jpeg" alt="map">
+            </picture>
+
+            <picture>
+                <source srcset="images/map2-600_x_909.jpeg" media="(max-width: 600px)">
+                <source srcset="images/map2.jpeg" media="(max-width: 600px)">
+
+                <img src="images/map2.jpeg" alt="map2">
+            </picture>
+           
+<!-- intro text -->
             <div class="map-text">
                 <p>It’s here that our story begins – and where it continues to thrive. This land is home to our family’s heritage as well as our renowned artisan bakery.</p>
                 <p>Sweetscape is known for producing Victoria’s most-loved sourdough and Australia’s finest granola. We have been using traditional methods and simple, natural ingredients for more than 20 years.</p>     

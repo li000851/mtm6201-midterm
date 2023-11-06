@@ -7,9 +7,17 @@
     <title>Contact</title>
 </head>
 <body>
+    <!-- nav bar -->
     <header>
-        <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
-        
+        <!-- responsive image -->
+        <picture>
+            <source srcset="images/Sweetscape-200_x_200.png" media="(max-width: 200px)">
+            <source srcset="images/Sweetscape-400_x_400.png" media="(max-width: 400px)">
+    
+            <img src="images/Sweetscape.png" alt="Sweetscape Logo" class="logo">
+        </picture>
+
+
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -24,7 +32,7 @@
         <section  class="wrapper">
         <h1>Contact</h1>
         <div class="c-container">
-            
+            <!-- contact info -->
             <div class="contact">
                 
                 <p>Want to know more, or have a question, comment or feedback? Please get in touch. We’d love to hear from you.</p>
@@ -36,7 +44,7 @@
                 <p>Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.</p>
                 <p>Our office is open from 9am — 5pm weekdays.</p>
             </div>
-
+            <!-- contact form -->
             <div class="form">
                 <form>
                     <label for="name">Name:</label>
