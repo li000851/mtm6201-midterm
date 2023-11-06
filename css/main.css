@@ -123,11 +123,11 @@ nav a {
     margin-bottom: 1rem;
 }
 
-.crumb{
+/* .crumb{
     grid-column: 3 / 1 span;
     margin: 1rem;
-}
-.crumb img{
+} */
+.crumb{
     width: 20%;
     padding-left: 1rem;
 }
@@ -308,9 +308,15 @@ img.bread-img{
 
 
 @media screen and (max-width: 768px) {
-    .grid-container{
+
+    .grid-container {
         grid-template-columns: 1fr;
+      }
+
+    .bread-image{
+        order: ;
     }
+
     .map-grid{
         grid-template-columns: 1fr;
     }
