@@ -1,7 +1,7 @@
 body, h1, img,h4, p, ul, li {
     margin: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     background-color: #fcfcf5;
     color: #434333;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -77,7 +77,7 @@ nav a {
     color: #ffb300ce; 
 }
 
-.navbar {
+/* .navbar {
     text-align: center;
     padding: 1em 0;
 }
@@ -95,8 +95,51 @@ nav a {
 
 .nav-link:hover {
     color: #ffb300ce; ;
+} */
+.navbar {
+    position: relative;
 }
 
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffb300ce;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffb300ce;
+}
+/* end nav animation */
 .bread-image{
     padding-left: 3rem;
     grid-row: span 2;
@@ -304,18 +347,79 @@ img.bread-img{
     margin-top: 1rem;
 }
 
+.skip-link {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 10px;
+    
+
+
+    font-weight: lighter;
+}
+
+.skip-link:focus, 
+.skip-link:hover {
+    left: 20px;
+    background-color: #444;
+    color: #ddd;
+    text-decoration: none; 
+}
+
+.back-to-top{
+    color: #000;
+    display: block;
+    margin: 5rem;
+}
+/* Products end */
 
 
 
 @media screen and (max-width: 768px) {
-
-    .grid-container {
-        grid-template-columns: 1fr;
-      }
-
-    .bread-image{
-        order: ;
+   
+   
+    header{
+        flex-direction: column;
     }
+    
+    .nav-links {
+        display: block;
+    }
+
+    .nav-link {
+        padding-left: 80px;
+        padding-right: 80px;
+        border-bottom: 1px solid #ccc;
+
+        text-align: center;
+        align-items: center;
+    }
+    
+    .grid-container {
+        display: block;
+      }
+    .bread-image{
+        order: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .bread-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+
+    margin: 1rem;
+    }
+
+
+
 
     .map-grid{
         grid-template-columns: 1fr;
@@ -337,6 +441,10 @@ img.bread-img{
     }
     .grid-bread{
         grid-template-columns: 1fr; 
+    }
+    
+    .vertical-text p{
+        display: none;
     }
 }
 
