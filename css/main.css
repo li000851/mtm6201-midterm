@@ -19,7 +19,36 @@ header {
 }
 
 /* animation */
-
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bread-image {
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes moveRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px); /* 图片将向右移动100像素 */
+    }
+  }
+  
+  .crumb {
+    animation: moveRight 2s ease-in-out infinite alternate;
+  }
+  
 /* animation end */
  
 nav ul {
